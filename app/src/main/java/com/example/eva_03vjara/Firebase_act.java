@@ -33,14 +33,14 @@ public class Firebase_act extends AppCompatActivity {
         edNombre = (EditText)findViewById(R.id.et3);
         edDestino = (EditText)findViewById(R.id.et4);
         edPromo = (EditText)findViewById(R.id.et5);
-        button = (Button)findViewById(R.id.button4);
+        button = (Button)findViewById(R.id.button);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if(!edNombre.equals(""))
                 {
-                    //Guarda en FireBase
+
                     Clientes c = new Clientes();
                     c.setId(UUID.randomUUID().toString());
                     c.setNombre(edNombre.getText().toString());
