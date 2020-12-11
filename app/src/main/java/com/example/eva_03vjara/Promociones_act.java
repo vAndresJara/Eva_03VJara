@@ -41,16 +41,29 @@ public class Promociones_act extends AppCompatActivity {
     public void calPromo(View v)
     {
         Clientes c = new Clientes();
+        String pro = editText1.getText().toString().trim();
         String cliente = spin1.getSelectedItem().toString();
         int envio = Integer.parseInt(editText2.getText().toString());
         int resultado;
 
-        if(editText1.equals("Pizzas promo") || editText1.equals("Master pizza") || editText1.equals("Pizza max") )
+        if(pro.equals("Pizzas promo") || pro.equals("Master pizza") || pro.equals("Pizza max") )
         {
             //Se gestiona pizza
-            if(editText1.equals("Pizzas promo"))
+            if(pro.equals("Pizzas promo"))
             {
                 resultado = 5990 + envio;
+                text1.setText("Estimado " + cliente + "el valor final promoción y envio es: ");
+                text2.setText(resultado);
+            }
+            if(pro.equals("Master pizza"))
+            {
+                resultado = 12990 + envio;
+                text1.setText("Estimado " + cliente + "el valor final promoción y envio es: ");
+                text2.setText(resultado);
+            }
+            if(pro.equals("Pizza max"))
+            {
+                resultado = 18500 + envio;
                 text1.setText("Estimado " + cliente + "el valor final promoción y envio es: ");
                 text2.setText(resultado);
             }

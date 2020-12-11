@@ -65,6 +65,7 @@
                 android:id="@+id/button7"
                 android:layout_width="297dp"
                 android:layout_height="43dp"
+                android:onClick="calPromo"
                 android:text="calcular promoción"
                 app:backgroundTint="#FF9800"
                 app:layout_constraintBottom_toBottomOf="parent"
