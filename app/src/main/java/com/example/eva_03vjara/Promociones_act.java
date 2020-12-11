@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -19,6 +20,7 @@ public class Promociones_act extends AppCompatActivity {
     private Spinner spin1;
     private TextView text1, text2;
     private EditText editText1, editText2;
+    private int envio;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +42,23 @@ public class Promociones_act extends AppCompatActivity {
     {
         Clientes c = new Clientes();
         String cliente = spin1.getSelectedItem().toString();
-        
+        int envio = Integer.parseInt(editText2.getText().toString());
+        int resultado;
+
+        if(editText1.equals("Pizzas promo") || editText1.equals("Master pizza") || editText1.equals("Pizza max") )
+        {
+            //Se gestiona pizza
+            if(editText1.equals("Pizzas promo"))
+            {
+                resultado = 5990 + envio;
+                text1.setText("Estimado " + cliente + "el valor final promoción y envio es: ");
+                text2.setText(resultado);
+            }
+        }
+        else
+        {
+            Toast.makeText(this,"Promoción no valida", Toast.LENGTH_LONG).show();
+        }
+
     }
 }
