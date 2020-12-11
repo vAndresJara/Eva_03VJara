@@ -41,6 +41,5 @@ public class Promociones_act extends AppCompatActivity {
         Clientes c = new Clientes();
         String cliente = spin1.getSelectedItem().toString();
         
-
     }
 }
