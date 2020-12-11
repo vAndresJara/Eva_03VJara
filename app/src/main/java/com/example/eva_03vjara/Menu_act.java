@@ -34,4 +34,10 @@ public class Menu_act extends AppCompatActivity {
         Intent i = new Intent(this, Firebase_act.class);
         startActivity(i);
     }
+
+    public void Promociones(View v)
+    {
+        Intent i = new Intent(this, Promociones_act.class);
+        startActivity(i);
+    }
 }
