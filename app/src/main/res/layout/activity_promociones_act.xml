@@ -85,12 +85,12 @@
                 app:layout_constraintVertical_bias="0.0">
 
                 <Spinner
-                    android:id="@+id/spinner"
+                    android:id="@+id/spinCl"
                     android:layout_width="match_parent"
                     android:layout_height="50dp" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName"
+                    android:id="@+id/etPromo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -98,7 +98,7 @@
                     android:inputType="textPersonName" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName2"
+                    android:id="@+id/etDestino"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"

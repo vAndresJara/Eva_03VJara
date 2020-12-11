@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
+import java.util.ArrayList;
+
 public class Menu_act extends AppCompatActivity {
 
     private VideoView videoView;
@@ -37,7 +39,16 @@ public class Menu_act extends AppCompatActivity {
 
     public void Promociones(View v)
     {
+        ArrayList<String> Cliente =  new ArrayList<>();
+
+        Cliente.add("Ramiro");
+        Cliente.add("Rosa");
+        Cliente.add("Robert");
+
+
         Intent i = new Intent(this, Promociones_act.class);
+        i.putExtra("listaCliente", Cliente);
+
         startActivity(i);
     }
 }
