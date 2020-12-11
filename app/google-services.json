@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "204321805414",
+    "project_id": "eva03-1ac26",
+    "storage_bucket": "eva03-1ac26.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204321805414:android:c84935c89307f0811fc9a7",
+        "android_client_info": {
+          "package_name": "com.example.eva_03vjara"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "204321805414-o7t7i2o7sdbnknhmcnhr116pjjsool4u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQ2H95lg0fFLVHi46HuzN-ChM6vg5PSRE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "204321805414-o7t7i2o7sdbnknhmcnhr116pjjsool4u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
